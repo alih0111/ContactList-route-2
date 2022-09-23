@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import AddContact from "./components/AddContact/AddContact";
+import ContactList from "./components/ContactList/ContactList";
+import "./App.css";
+import { Switch, Route } from "react-router-dom";
+import ContactDetail from "./components/ContactDetail/ContactDetail";
+import EditContact from "./components/EditContact/EditContact";
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main className="App">
+      <h1> Contact Manager</h1>
+      <Switch>
+        <Route path="/user/:id" component={ContactDetail} />
+        <Route path="/edit/:id" component={EditContact} />
+        <Route path="/add" component={AddContact} />
+        <Route path="/" exact component={ContactList} />
+      </Switch>
+    </main>
   );
 }
-
-export default App;
+ 

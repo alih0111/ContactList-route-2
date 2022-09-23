@@ -1,0 +1,67 @@
+.contactList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.item {
+  min-width: 20rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  margin-top: 20px;
+}
+.item button {
+  outline: none;
+  cursor: pointer;
+  border: 1px solid #dc2626;
+  color: #dc2626;
+  background-color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.item .editBtn {
+  margin-right: 1rem;
+  border: 1px solid #6d28d9;
+  color: #6d28d9;
+}
+.item img {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+.listWrapper {
+  /* width: 20rem; */
+  display: flex;
+  justify-content: center;
+}
+.listHeader {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+.listHeader button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: #fff;
+  background-color: #6d28d9;
+  padding: 5px 10px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
