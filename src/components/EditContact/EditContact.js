@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import getOneContact from "../../services/getOneContact";
+import updateContact from '../../services/updateContact'
 // import "./addContact.css";
 
 export default function EditContact({ history, match }) {
