@@ -41,7 +41,6 @@
   margin-right: 5px;
 }
 .listWrapper {
-  /* width: 20rem; */
   display: flex;
   justify-content: center;
 }
@@ -66,7 +65,7 @@
   -o-border-radius: 5px;
 }
 input{
-  padding: 3px 6px;
+  padding: 4px 6px;
   border: 1px solid #ccc;
   outline: none;
   border-radius: 5px;

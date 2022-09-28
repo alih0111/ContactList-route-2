@@ -10,6 +10,7 @@ h1{
     color: #444;    
     display: flex;
     justify-content: center;
+    padding-bottom: 9px;
 }
 a{
   all: unset;
