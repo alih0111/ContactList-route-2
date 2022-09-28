@@ -51,12 +51,13 @@ export default function ContactList() {
       <div className="contactList">
         <div className="listHeader">
           <h2>Contacts</h2>
+          <div>
+            <input type="text" value={searchTerm} onChange={searchHandler}
+            placeholder='Search...' />
+          </div>
           <Link to="/add">
             <button>Add</button>
           </Link>
-          <div>
-            <input type="text" value={searchTerm} onChange={searchHandler} />
-          </div>
         </div>
         {contacts ? (
           contacts.map((contact) => {
